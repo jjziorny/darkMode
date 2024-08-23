@@ -1,0 +1,154 @@
+/* Ajustes gerais */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    transition: 0.3s;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.bi-sun {
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.bi-moon {
+    display: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(202, 202, 202);
+    box-shadow: 0.5px 0.5px 10px 0.5px #000;
+    padding: 1rem 2rem;
+    position: relative;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+/* Ajuste do card */
+.card {
+    margin-top: 2rem; /*Ajusta a margem superior para ficar dentro da tela*/
+    display: flex;
+    flex-direction: column; /* Mudar para coluna */
+    width: 80%; /* Aumentar a largura do card */
+    max-width: 600px; /* Limitar a largura máxima */
+    background-color: white;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
+    overflow: hidden; /* Para garantir que a imagem não vaze */
+    border-radius: 8px; /* Adicionando cantos arredondados */
+}
+
+.card-image {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    position: relative;
+    text-align: center; /* Centralizar conteúdo */
+}
+
+.card-image span {
+    font-size: 2rem;
+    font-weight: 900;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #444;
+}
+
+.card img {
+    width: 100%; /* Garantir que a imagem preencha a largura do card */
+    height: auto; /* Ajustar altura automaticamente */
+    max-height: 375px; /* Limitar altura máxima da imagem */
+}
+
+.card-details {
+    padding: 2rem;
+    background-color: #f5f5f5;
+    
+}
+
+
+.card-details h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.subtitle {
+    color: #444;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.description {
+    line-height: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.price-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    background-color: #444;
+    width: 7rem;
+    height: 3rem;
+    border-radius: 3rem;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+/* Estilos para o tema escuro */
+.dark,
+.dark header {
+    background-color: #263238;
+    color: white;
+}
+
+.dark .card-details h2 {
+    color: black; /* Define a cor do texto "Dark Mode" como preta */
+}
+.dark .bi-sun {
+    display: none;
+}
+
+.dark .bi-moon {
+    display: block;
+}
+
+.dark .card {
+    background-color: #37474f;
+}
+
+.dark .card-image {
+    background-color: #273035;
+}
+
+.dark .subtitle {
+    color: #000000;
+}
+
+.dark .description {
+    color: #000000;
+}
+
+.dark .btn {
+    color: #67b4f3;
+}
